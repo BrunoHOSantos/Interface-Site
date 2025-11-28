@@ -1,0 +1,21 @@
+.sidebar-esquerda {
+    top: 0;
+    left: 0;              /* mudou para esquerda */
+    width: 120px;         /* largura da coluna */
+    height: 100vh;        /* 100% da altura da tela */
+    background-color: #212529; /* navbar dark */
+    padding: 20px;
+    overflow-y: auto;     /* rolagem se tiver muitos itens */
+}
+
+.video-fixo {
+    position: absolute;
+    top: 20vh;
+    right: 20vw; /* left, bottom se quiser mudar */
+    
+}
+
+.sidebar-esquerda{
+    background-color: #2B3035;
+    
+}
