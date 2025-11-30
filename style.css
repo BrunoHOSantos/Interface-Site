@@ -19,3 +19,10 @@
     background-color: #2B3035;
     
 }
+
+#PrimeiroTitulo{
+    position: absolute;
+    top: 10%;
+    width: 100vw;
+    text-align: center;
+}
