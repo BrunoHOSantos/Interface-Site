@@ -1,9 +1,31 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+html.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+
+.Geral{
+    position: relative !important;
+    z-index: 999999 !important;
+}
 .sidebar-esquerda {
-    position: absolute;
+    position: fixed;
+    z-index: 1; /* menor valor = fica atrás */
     top: 0;
     left: 0;              /* mudou para esquerda */
     width: 120px;         /* largura da coluna */
-    height: 120vh;        /* 100% da altura da tela */
+    height: 150vh;        /* 100% da altura da tela */
     background-color: #212529; /* navbar dark */
     padding: 20px;
     overflow-y: auto;     /* rolagem se tiver muitos itens */
@@ -21,7 +43,8 @@
 
 .sidebar-esquerda{
     position: absolute;
-    top: 5vh;
+    z-index: 1; /* menor valor = fica atrás */
+    top: 2vh;
     background-color: #2B3035;
     
 }
@@ -29,7 +52,7 @@
 #PrimeiroTitulo{
     position: absolute;
     top: 10%;
-    width: 100vw;
+    width: 110vw;
     text-align: center;
 }
 
@@ -38,9 +61,13 @@
     position: relative;
     max-width: 100%;
     overflow-wrap: break-word;
-    top: 55vh;
+    top: 60vh;
     margin-top: 10rem;
     margin-left: 12vw;
     margin-right: 5vw;
     text-align: center;
+}
+
+#toggleTheme{
+    margin-top: 3vh;
 }
