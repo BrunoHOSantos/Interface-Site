@@ -1,21 +1,27 @@
 .sidebar-esquerda {
+    position: absolute;
     top: 0;
     left: 0;              /* mudou para esquerda */
     width: 120px;         /* largura da coluna */
-    height: 100vh;        /* 100% da altura da tela */
+    height: 120vh;        /* 100% da altura da tela */
     background-color: #212529; /* navbar dark */
     padding: 20px;
     overflow-y: auto;     /* rolagem se tiver muitos itens */
+    
 }
 
 .video-fixo {
     position: absolute;
     top: 20vh;
     right: 20vw; /* left, bottom se quiser mudar */
+    margin: 0 0 2rem 0;
     
 }
 
+
 .sidebar-esquerda{
+    position: absolute;
+    top: 5vh;
     background-color: #2B3035;
     
 }
@@ -24,5 +30,17 @@
     position: absolute;
     top: 10%;
     width: 100vw;
+    text-align: center;
+}
+
+#Explicacao{
+    font-size: 2vmin;
+    position: relative;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    top: 55vh;
+    margin-top: 10rem;
+    margin-left: 12vw;
+    margin-right: 5vw;
     text-align: center;
 }
