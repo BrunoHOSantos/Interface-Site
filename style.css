@@ -20,30 +20,58 @@ body {
     z-index: 999999 !important;
 }
 .sidebar-esquerda {
-    position: fixed;
+    position: absolute;
     z-index: 1; /* menor valor = fica atrás */
     top: 0;
     left: 0;              /* mudou para esquerda */
     width: 120px;         /* largura da coluna */
     height: 150vh;        /* 100% da altura da tela */
+    margin-right: 22vw;
     background-color: #212529; /* navbar dark */
     padding: 20px;
     overflow-y: auto;     /* rolagem se tiver muitos itens */
     
 }
 
-.video-fixo {
+@media (max-width: 768px) {
+    .sidebar-esquerda {
     position: absolute;
+    z-index: 1; /* menor valor = fica atrás */
+    top: 0;
+    left: 0;              /* mudou para esquerda */
+    width: 90px;         /* largura da coluna */
+    height: 130vh;        /* 100% da altura da tela */
+    margin-right: 22vw;
+    background-color: #212529; /* navbar dark */
+    padding: 20px;
+    overflow-y: auto;     /* rolagem se tiver muitos itens */
+    
+}
+}
+
+.video-container {
+    position: absolute;
+    width: 50vw;
     top: 20vh;
     right: 20vw; /* left, bottom se quiser mudar */
     margin: 0 0 2rem 0;
     
 }
 
+@media (max-width: 868px) {
+    .video-container {
+    width: 70vw;
+    position: absolute;
+    top: 20vh;
+    right: 7vw; /* left, bottom se quiser mudar */
+    margin: 0 0 2rem 0;
+    }
+}
+
 
 .sidebar-esquerda{
     position: absolute;
-    z-index: 1; /* menor valor = fica atrás */
+    z-index: 10; /* menor valor = fica atrás */
     top: 2vh;
     background-color: #2B3035;
     
@@ -61,13 +89,34 @@ body {
     position: relative;
     max-width: 100%;
     overflow-wrap: break-word;
+    word-wrap: break-word;
     top: 60vh;
     margin-top: 10rem;
     margin-left: 12vw;
     margin-right: 5vw;
     text-align: center;
+    
+}
+
+@media (max-width: 1128px) {
+    #Explicacao{        
+    font-size: 2vmin;
+    position: relative;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    top: 30vh;
+    margin-top: 10rem;
+    margin-left: 18vw; /* margem menor */
+    margin-right: 5vw;
+    text-align: center;   
+    }
 }
 
 #toggleTheme{
-    margin-top: 3vh;
+    margin-top: 2vh;
 }
+
+
+
+
