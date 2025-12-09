@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
 
 <link
@@ -63,13 +69,13 @@
 </div>
 
 
-<p id="Explicacao" style="font-style: italic;"> O que a música quer dizer?
+<p id="Explicacao" > O que a música quer dizer?
 
 “Best of You” é uma música sobre libertação emocional, luta interna e recusa em ser controlado por pessoas ou situações que te machucam.
 
 Ela fala sobre: <br/>
 <br/>
-<strong style="font-size: 34px;">1</strong> Resistir a algo que tenta te quebrar
+<strong style="font-size: 34px;">1.</strong> Resistir a algo que tenta te quebrar
 
 O eu-lírico (quem “fala” na música) está cansado de sofrer por alguém ou por alguma situação que drena suas forças.
 
@@ -79,7 +85,7 @@ A frase repetida “Is someone getting the best of you?” significa:
 
 É quase um grito de frustração e libertação.<br/>
 <br/>
-<strong style="font-size: 34px;">2</strong> Romper com ciclos de dor
+<strong style="font-size: 34px;">2.</strong> Romper com ciclos de dor
 
 A música também fala sobre:
 
@@ -93,7 +99,7 @@ e o desejo de finalmente superar isso.
 
 O verso “I've got another confession to make” mostra alguém admitindo fraquezas, mas também dizendo que quer mudar.<br/>
 <br/>
-<strong style="font-size: 34px;">3</strong> Recuperar sua identidade
+<strong style="font-size: 34px;">3.</strong> Recuperar sua identidade
 
 Grande parte do conceito é sobre não deixar ninguém “te possuir” emocionalmente.
 É sobre recuperar sua energia, seu valor, sua força.
@@ -101,7 +107,7 @@ Grande parte do conceito é sobre não deixar ninguém “te possuir” emociona
 A música pergunta:
 “Você vai deixar alguém tomar o melhor que existe em você, ou vai lutar por si mesmo?”<br/>
 <br/>
-<strong style="font-size: 34px;">4</strong> Dor transformada em força
+<strong style="font-size: 34px;">4.</strong> Dor transformada em força
 
 Apesar de ser uma música de dor, ela também é de resistência.
 O tom agressivo e emocional reflete alguém que está saindo de um lugar sombrio e finalmente dizendo:
@@ -111,9 +117,27 @@ O tom agressivo e emocional reflete alguém que está saindo de um lugar sombrio
 
 “Best of You” é sobre superar alguém ou algo que te machucou, recuperar a sua força e impedir que os outros tirem “o melhor de você”.
 É uma música sobre libertação emocional e coragem.</p>
-<h1 id="PrimeiroTitulo">Foo Fighters - Best Of You</h1>
+<h1 id="PrimeiroTitulo" style="font-style: italic;">Foo Fighters - Best Of You</h1>
 
+
+<div id="Comentarios">
+  <div class="container mt-4">
+
+    <h3 class="mb-3">Comentários sobre a Música</h3>
+
+    <!-- Campo de comentário -->
+    <div class="mb-3">
+        <textarea id="commentInput" class="form-control" rows="3" placeholder="Digite seu comentário..."></textarea>
+    </div>
+
+    <button id="sendComment" class="btn btn-primary mb-4">Enviar</button>
+
+    <!-- Feed -->
+    <div id="commentFeed" class="list-group"></div>
+  </div>
+</div>
   
+
   <!-- frontend -->
   <link rel="stylesheet" href="style.css">
   <!-- backend -->
