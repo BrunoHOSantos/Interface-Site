@@ -26,7 +26,7 @@ body {
     top: 0;
     left: 0;              /* mudou para esquerda */
     width: 120px;         /* largura da coluna */
-    height: 230vh;        /* 100% da altura da tela */
+    height: 250vh;        /* 100% da altura da tela */
     margin-right: 22vw;
     background-color: #212529; /* navbar dark */
     padding: 20px;
@@ -47,6 +47,7 @@ body {
     padding: 20px;
     overflow-y: auto;     /* rolagem se tiver muitos itens */
     }
+
 }
 
 @media (max-width: 980px) {
@@ -62,6 +63,9 @@ body {
     padding: 20px;
     overflow-y: auto;     /* rolagem se tiver muitos itens */
     }
+
+
+
 }
 
 .video-container {
@@ -224,7 +228,37 @@ body {
 
 
 #toggleTheme{
+    position: fixed;
+    margin-top: 20vh;
+}
+
+#ThePretender{
+    position: fixed;
+    width: 100px;
     margin-top: 2vh;
+}
+@media (max-width: 768px) {
+    #ThePretender{
+    font-size: 10pt;
+    margin-top: 2vh;
+    width: 80px;
+   }
+   #Everlong{
+    margin-top: 1vh;
+    font-size: 7pt;
+   }
+}
+
+#Everlong{
+    position: fixed;
+    margin-top: 10vh;
+}
+
+#Bruno{
+    font-size: 11pt;
+    width: 82px;
+    position: fixed;
+    margin-top: 88vh;
 }
 
 #Comentarios{
