@@ -34,6 +34,14 @@ body {
     
 }
 
+.sidebar-esquerda{
+    position: absolute;
+    z-index: 10; /* menor valor = fica atrás */
+    top: 2vh;
+    background-color: #2B3035;
+    
+}
+
 @media (max-width: 768px) {
     .sidebar-esquerda {
     position: absolute;
@@ -160,13 +168,6 @@ body {
   }
  }
 
-.sidebar-esquerda{
-    position: absolute;
-    z-index: 10; /* menor valor = fica atrás */
-    top: 2vh;
-    background-color: #2B3035;
-    
-}
 
 #PrimeiroTitulo{
     font-size: 5vmin;
@@ -227,9 +228,18 @@ body {
 }
 
 
-#toggleTheme{
+#toggleTheme.inicio{
+
+    margin-top: 80vh;
     position: fixed;
-    margin-top: 20vh;
+    transition: all 0.4s ease;
+}
+
+#toggleTheme.movido {
+  position: fixed;
+  top:0;
+  margin-top: 12px;
+  transition: all 0.4s ease;
 }
 
 #ThePretender{
@@ -237,21 +247,88 @@ body {
     width: 100px;
     margin-top: 2vh;
 }
-@media (max-width: 768px) {
-    #ThePretender{
-    font-size: 10pt;
-    margin-top: 2vh;
-    width: 80px;
-   }
-   #Everlong{
-    margin-top: 1vh;
-    font-size: 7pt;
-   }
-}
-
 #Everlong{
     position: fixed;
     margin-top: 10vh;
+}
+
+#LearnToFly{
+    position: fixed;
+    width: 100px;
+    margin-top: 15vh;
+}
+
+#MyHero{
+    position: fixed;
+    width: 100px;
+    margin-top: 23vh;
+}
+
+#TimesLikeThese{
+    position: fixed;
+    width: 100px;
+    margin-top: 28vh;
+}
+
+@media (max-width: 768px) {
+    #ThePretender{
+    width: 80px;
+    font-size: 8pt;
+    margin-top: 2vh;
+    
+   }
+   #Everlong{
+    margin-top: 8vh;
+    font-size: 8pt;
+   }
+
+   #LearnToFly{
+    width: 80px;
+    margin-top: 12vh;
+    font-size: 8pt;
+ }
+
+ #MyHero{
+    width: 80px;
+    margin-top: 18vh;
+    font-size: 8pt;
+ }
+
+ #TimesLikeThese{
+    width: 80px;
+    margin-top: 22vh;
+    font-size: 8pt;
+ }
+}
+
+@media (max-width: 980px) {
+    #ThePretender{
+    width: 80px;
+    font-size: 8pt;
+    margin-top: 2vh;
+    
+   }
+   #Everlong{
+    margin-top: 8vh;
+    font-size: 8pt;
+   }
+
+   #LearnToFly{
+    width: 80px;
+    margin-top: 12vh;
+    font-size: 8pt;
+ }
+    #MyHero{
+    width: 80px;
+    margin-top: 18vh;
+    font-size: 8pt;
+ }
+
+    #TimesLikeThese{
+    width: 80px;
+    margin-top: 22vh;
+    font-size: 8pt;
+ }
 }
 
 #Bruno{
@@ -281,3 +358,10 @@ body {
  }
 }
 
+.sidebar-esquerda{
+    position: absolute;
+    z-index: 10; /* menor valor = fica atrás */
+    top: 2vh;
+    background-color: #2B3035;
+    
+}

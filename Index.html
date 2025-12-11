@@ -55,10 +55,11 @@
       <nav class="navbar navbar-expand-lg bg-#2B3035 navbar-dark flex-column">
         <button id="ThePretender" type="button" class="btn btn-dark">The Pretender</button>
         <button id="Everlong" type="button" class="btn btn-dark">Everlong</button>
-          <button id="toggleTheme" type="button" class="btn btn-dark">☼︎</button>
-          <button id="Bruno" type="button" class="btn btn-light">By:Bruno</button>
-
-          
+        <button id="Bruno" type="button" class="btn btn-light">By:Bruno</button>
+        <button id="toggleTheme" type="button" class="btn btn-dark">☼︎</button>
+        <button id="LearnToFly" type="button" class="btn btn-dark">Learn To Fly</button>
+        <button id="MyHero" type="button" class="btn btn-dark">My Hero</button>
+        <button id="TimesLikeThese" type="button" class="btn btn-dark">Times Like These</button>
   </aside>
 </div>
 
@@ -145,8 +146,22 @@ O tom agressivo e emocional reflete alguém que está saindo de um lugar sombrio
 
   <!-- frontend -->
   <link rel="stylesheet" href="style.css">
+
   <!-- backend -->
   <script src="backend.js"></script>
+  <script>
+  window.addEventListener('scroll', () => {
+    const botao = document.getElementById('toggleTheme');
+
+    if (window.scrollY > 50) {
+      botao.classList.add('movido');
+      botao.classList.remove('inicio');
+    } else {
+      botao.classList.add('inicio');
+      botao.classList.remove('movido');
+    }
+  });
+</script>
   
 
 </body>
