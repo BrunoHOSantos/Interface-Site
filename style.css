@@ -11,7 +11,7 @@ html.dark {
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: 0.3s ease;
+    transition: 0.60s ease;
 
 }
 
@@ -22,21 +22,21 @@ body {
 }
 .sidebar-esquerda {
     position: absolute;
-    z-index: 1; /* menor valor = fica atrás */
+    z-index: 1; 
     top: 0;
-    left: 0;              /* mudou para esquerda */
-    width: 120px;         /* largura da coluna */
-    height: 250vh;        /* 100% da altura da tela */
+    left: 0;              
+    width: 120px;         
+    height: 250vh;        
     margin-right: 22vw;
-    background-color: #212529; /* navbar dark */
+    background-color: #212529; 
     padding: 20px;
-    overflow-y: auto;     /* rolagem se tiver muitos itens */
+    overflow-y: auto;     
     
 }
 
 .sidebar-esquerda{
     position: absolute;
-    z-index: 10; /* menor valor = fica atrás */
+    z-index: 10; 
     top: 2vh;
     background-color: #2B3035;
     
@@ -45,15 +45,15 @@ body {
 @media (max-width: 768px) {
     .sidebar-esquerda {
     position: absolute;
-    z-index: 1; /* menor valor = fica atrás */
+    z-index: 1; 
     top: 0;
-    left: 0;              /* mudou para esquerda */
-    width: 90px;         /* largura da coluna */
-    height: 300vh;        /* 100% da altura da tela */
+    left: 0;              
+    width: 90px;         
+    height: 300vh;        
     margin-right: 22vw;
-    background-color: #212529; /* navbar dark */
+    background-color: #212529; 
     padding: 20px;
-    overflow-y: auto;     /* rolagem se tiver muitos itens */
+    overflow-y: auto;     
     }
 
 }
@@ -61,15 +61,15 @@ body {
 @media (max-width: 980px) {
     .sidebar-esquerda {
     position: absolute;
-    z-index: 1; /* menor valor = fica atrás */
+    z-index: 1; 
     top: 0;
-    left: 0;              /* mudou para esquerda */
-    width: 90px;         /* largura da coluna */
-    height: 310vh;        /* 100% da altura da tela */
+    left: 0;              
+    width: 90px;         
+    height: 310vh;        
     margin-right: 22vw;
-    background-color: #212529; /* navbar dark */
+    background-color: #212529; 
     padding: 20px;
-    overflow-y: auto;     /* rolagem se tiver muitos itens */
+    overflow-y: auto;     
     }
 
 
@@ -80,7 +80,7 @@ body {
     position: absolute;
     width: 50vw;
     top: 20vh;
-    right: 20vw; /* left, bottom se quiser mudar */
+    right: 20vw; 
     margin: 0 0 2rem 0;
     
 }
@@ -89,7 +89,7 @@ body {
     width: 70vw;
     position: absolute;
     top: 20vh;
-    right: 7vw; /* left, bottom se quiser mudar */
+    right: 7vw; 
     margin: 0 0 2rem 0;
     }
 }
@@ -99,7 +99,7 @@ body {
     width: 70vw;
     position: absolute;
     top: 20vh;
-    right: 7vw; /* left, bottom se quiser mudar */
+    right: 7vw; 
     margin: 0 0 2rem 0;
     }
 }
@@ -109,7 +109,7 @@ body {
     width: 70vw;
     position: absolute;
     top: 20vh;
-    right: 8vw; /* left, bottom se quiser mudar */
+    right: 8vw; 
     margin: 0 0 2rem 0;
     }
  }
@@ -119,7 +119,7 @@ body {
     width: 70vw;
     position: absolute;
     top: 20vh;
-    right: 12vw; /* left, bottom se quiser mudar */
+    right: 12vw; 
     margin: 0 0 2rem 0;
     }
   }
@@ -129,7 +129,7 @@ body {
     width: 900px;
     position: absolute;
     top: 20vh;
-    right: 15vw; /* left, bottom se quiser mudar */
+    right: 15vw; 
     }
    }
 @media (min-width: 1920px) and (max-width: 2560px) { 
@@ -137,7 +137,7 @@ body {
     width: 1000px;
     position: absolute;
     top: 20vh;
-    right: 18vw; /* left, bottom se quiser mudar */
+    right: 18vw; 
     } 
    }
 
@@ -146,7 +146,7 @@ body {
     width: 950px;
     position: absolute;
     top: 20vh;
-    right: 20vw; /* left, bottom se quiser mudar */
+    right: 20vw; 
     } 
    }
 
@@ -155,7 +155,7 @@ body {
     width: 1000px;
     position: absolute;
     top: 20vh;
-    right: 28vw; /* left, bottom se quiser mudar */
+    right: 28vw; 
     }
    }
     
@@ -164,7 +164,7 @@ body {
     width: 1000px;
     position: absolute;
     top: 20vh;
-    right: 35vw; /* left, bottom se quiser mudar */
+    right: 35vw; 
   }
  }
 
@@ -183,6 +183,7 @@ body {
 #Explicacao{
     font-size: 2.5vmin;
     position: relative;
+    z-index: 2;
     max-width: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -204,7 +205,7 @@ body {
     word-wrap: break-word;
     top: 40vh;
     margin-top: 10rem;
-    margin-left: 18vw; /* margem menor */
+    margin-left: 18vw; 
     margin-right: 5vw;
     margin-bottom: 50vh;
     text-align: center;   
@@ -220,16 +221,18 @@ body {
     word-wrap: break-word;
     top: 30vh;
     margin-top: 10rem;
-    margin-left: 18vw; /* margem menor */
+    margin-left: 18vw; 
     margin-right: 5vw;
     margin-bottom: 30vh;
     text-align: center;   
     }
 }
 
+#toggleTheme{
+    margin-top: 80vh;
+}
 
 #toggleTheme.inicio{
-
     margin-top: 80vh;
     position: fixed;
     transition: all 0.4s ease;
@@ -247,28 +250,36 @@ body {
     width: 100px;
     margin-top: 2vh;
 }
-#Everlong{
+
+#BestOfYou{
     position: fixed;
+    width: 100px;
     margin-top: 10vh;
 }
 
 #LearnToFly{
     position: fixed;
     width: 100px;
-    margin-top: 15vh;
+    margin-top: 18vh;
+}
+
+
+#TimesLikeThese{
+    position: fixed;
+    width: 100px;
+    margin-top: 26vh;
 }
 
 #MyHero{
     position: fixed;
     width: 100px;
-    margin-top: 23vh;
+    margin-top: 34vh;
+}
+#Everlong{
+    position: fixed;
+    margin-top: 39.5vh;
 }
 
-#TimesLikeThese{
-    position: fixed;
-    width: 100px;
-    margin-top: 28vh;
-}
 
 @media (max-width: 768px) {
     #ThePretender{
@@ -276,29 +287,34 @@ body {
     font-size: 8pt;
     margin-top: 2vh;
     
-   }
-   #Everlong{
-    margin-top: 8vh;
+   }   
+       #TimesLikeThese{
+       width: 80px;
+       margin-top: 8vh;
+       font-size: 8pt;
+    }
+    
+    #LearnToFly{
+        width: 80px;
+        margin-top: 14vh;
+        font-size: 8pt;
+    }
+    
+    #BestOfYou{
+        width: 80px;
+        margin-top: 20vh;
+        font-size: 8pt;
+    }
+    #MyHero{
+        width: 80px;
+    margin-top: 26vh;
     font-size: 8pt;
-   }
+    }
+    #Everlong{
+    margin-top: 30.5vh;
+    font-size: 8pt;
+    }
 
-   #LearnToFly{
-    width: 80px;
-    margin-top: 12vh;
-    font-size: 8pt;
- }
-
- #MyHero{
-    width: 80px;
-    margin-top: 18vh;
-    font-size: 8pt;
- }
-
- #TimesLikeThese{
-    width: 80px;
-    margin-top: 22vh;
-    font-size: 8pt;
- }
 }
 
 @media (max-width: 980px) {
@@ -307,28 +323,34 @@ body {
     font-size: 8pt;
     margin-top: 2vh;
     
-   }
-   #Everlong{
-    margin-top: 8vh;
-    font-size: 8pt;
-   }
-
-   #LearnToFly{
-    width: 80px;
-    margin-top: 12vh;
-    font-size: 8pt;
- }
+   }   
+       #TimesLikeThese{
+       width: 80px;
+       margin-top: 8vh;
+       font-size: 8pt;
+    }
+    
+    #LearnToFly{
+        width: 80px;
+        margin-top: 14vh;
+        font-size: 8pt;
+    }
+    
+    #BestOfYou{
+        width: 80px;
+        margin-top: 20vh;
+        font-size: 8pt;
+    }
     #MyHero{
-    width: 80px;
-    margin-top: 18vh;
+        width: 80px;
+    margin-top: 26vh;
     font-size: 8pt;
- }
+    }
+    #Everlong{
+    margin-top: 30.5vh;
+    font-size: 8pt;
+    }
 
-    #TimesLikeThese{
-    width: 80px;
-    margin-top: 22vh;
-    font-size: 8pt;
- }
 }
 
 #Bruno{
@@ -360,8 +382,35 @@ body {
 
 .sidebar-esquerda{
     position: absolute;
-    z-index: 10; /* menor valor = fica atrás */
+    z-index: 10; 
     top: 2vh;
     background-color: #2B3035;
     
+}
+
+#guitar-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.guitar {
+  position: absolute;
+  font-size: 24px;
+  opacity: 0.25;
+  animation: fall-diagonal linear infinite;
+}
+
+@keyframes fall-diagonal {
+  0% {
+    transform: translate(100vw, -10vh) rotate(0deg);
+  }
+  100% {
+    transform: translate(-20vw, 110vh) rotate(360deg);
+  }
 }

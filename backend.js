@@ -5,6 +5,29 @@ document.getElementById("toggleTheme").addEventListener('click', function() {
     document.documentElement.classList.toggle('dark')
 });
 
+document.getElementById("ThePretender").addEventListener("click", () => {
+    window.location.href = "../Paginas/ThePretender.html"
+})
+
+document.getElementById("BestOfYou").addEventListener("click", () => {
+    window.location.href = "../Index.html"
+})
+
+document.getElementById("Everlong").addEventListener("click", () => {
+    window.location.href = "../Paginas/Everlong.html"
+})
+
+document.getElementById("LearnToFly").addEventListener("click", () => {
+    window.location.href = "../Paginas/LearnToFly.html"
+})
+
+document.getElementById("MyHero").addEventListener("click", () => {
+    window.location.href = "../Paginas/MyHero.html"
+})
+
+document.getElementById("TimesLikeThese").addEventListener("click", () => {
+    window.location.href = "../Paginas/TimesLikeThese.html"
+})
 
 document.getElementById("sendComment").addEventListener("click", function() {
     const text = document.getElementById("commentInput").value.trim();
