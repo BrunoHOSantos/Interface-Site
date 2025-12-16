@@ -65,86 +65,13 @@
   </aside>
 </div>
 
-<div class="video-container">
-  <div class="ratio ratio-16x9">
-    <iframe 
-      src="https://www.youtube.com/embed/h_L4Rixya64?si=7kpLwn-wJhqx1pFS"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
-</div>
 
 
-<p id="Explicacao" >
+<!-- ---------------------------------------- -->
+<h1 class="typewriter">Bem-vindo.</h1>
+<p id="type-loop"></p>
+<!-- ---------------------------------------------- -->
 
-“Best of You” é uma música sobre libertação emocional, luta interna e recusa em ser controlado por pessoas ou situações que te machucam.
-
-Ela fala sobre: <br/>
-<br/>
-<strong style="font-size: 34px;">1.</strong> Resistir a algo que tenta te quebrar
-
-O eu-lírico (quem “fala” na música) está cansado de sofrer por alguém ou por alguma situação que drena suas forças.
-
-A frase repetida “Is someone getting the best of you?” significa:
-
-"Alguém está tirando o melhor de você? Alguém está usando sua força, sua bondade, sua energia?"
-
-É quase um grito de frustração e libertação.<br/>
-<br/>
-<strong style="font-size: 34px;">2.</strong> Romper com ciclos de dor
-
-A música também fala sobre:
-
-relacionamentos tóxicos,
-
-manipulação emocional,
-
-traumas do passado,
-
-e o desejo de finalmente superar isso.
-
-O verso “I've got another confession to make” mostra alguém admitindo fraquezas, mas também dizendo que quer mudar.<br/>
-<br/>
-<strong style="font-size: 34px;">3.</strong> Recuperar sua identidade
-
-Grande parte do conceito é sobre não deixar ninguém “te possuir” emocionalmente.
-É sobre recuperar sua energia, seu valor, sua força.
-
-A música pergunta:
-“Você vai deixar alguém tomar o melhor que existe em você, ou vai lutar por si mesmo?”<br/>
-<br/>
-<strong style="font-size: 34px;">4.</strong> Dor transformada em força
-
-Apesar de ser uma música de dor, ela também é de resistência.
-O tom agressivo e emocional reflete alguém que está saindo de um lugar sombrio e finalmente dizendo:
-“Chega. Eu vou reagir.”<br/>
-<br/>
-<strong style="font-size: 54px;" style="font-style: normal;">💬</strong> Resumo do conceito
-
-“Best of You” é sobre superar alguém ou algo que te machucou, recuperar a sua força e impedir que os outros tirem “o melhor de você”.
-É uma música sobre libertação emocional e coragem.</p>
-<h1 id="PrimeiroTitulo" style="font-style: italic;">Foo Fighters - Best Of You</h1>
-
-
-<div id="Comentarios">
-  <div class="container mt-4">
-
-    <h3 class="mb-3">Comentários sobre a Música</h3>
-
-    <!-- Campo de comentário -->
-    <div class="mb-3">
-        <textarea id="commentInput" class="form-control" rows="3" placeholder="Digite seu comentário..."></textarea>
-    </div>
-
-    <button id="sendComment" class="btn btn-primary mb-4">Enviar</button>
-
-    <!-- Feed -->
-    <div id="commentFeed" class="list-group"></div>
-  </div>
-</div>
-  
 
   <!-- frontend -->
   <link rel="stylesheet" href="style.css">
@@ -167,21 +94,73 @@ O tom agressivo e emocional reflete alguém que está saindo de um lugar sombrio
 </script>
 
 <script>
-  const rain = document.getElementById("guitar-rain");
-  const amount = 25; // quantidade de guitarras
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".typewriter");
+  let delayBetweenElements = 600;
 
-  for (let i = 0; i < amount; i++) {
-    const guitar = document.createElement("div");
-    guitar.classList.add("guitar");
-    guitar.textContent = "🎸";
+  elements.forEach((el, index) => {
+    const text = el.textContent;
+    el.textContent = "";
 
-    guitar.style.left = Math.random() * 100 + "vw";
-    guitar.style.animationDuration = 6 + Math.random() * 6 + "s";
-    guitar.style.animationDelay = Math.random() * 5 + "s";
-    guitar.style.fontSize = 16 + Math.random() * 24 + "px";
+    const cursor = document.createElement("span");
+    cursor.classList.add("cursor");
+    cursor.textContent = "|";
+    el.appendChild(cursor);
 
-    rain.appendChild(guitar);
+    let i = 0;
+    const speed = Math.random() * 40 + 40;
+
+    setTimeout(() => {
+      const typing = setInterval(() => {
+        if (i < text.length) {
+          cursor.insertAdjacentText("beforebegin", text.charAt(i));
+          i++;
+        } else {
+          clearInterval(typing);
+          cursor.remove(); // remove cursor após terminar
+        }
+      }, 70); // velocidade da digitação
+    }, index * delayBetweenElements);
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const el = document.getElementById("type-loop");
+
+  const texts = [
+    "Um experimento de minha parte, para mostrar oque aprendi em: Bootstrap, CSS, HTML, JS...",
+    "Isso e um site mostrando algumas musicas de uma excelente banda, para excelentes pessoas.",
+    `"Best Of You" E a melhor musicas deles :)`
+  ];
+
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function loop() {
+    const currentText = texts[textIndex];
+
+    if (!isDeleting) {
+      el.textContent = currentText.slice(0, charIndex++);
+      if (charIndex > currentText.length) {
+        setTimeout(() => isDeleting = true, 1000); // espera 4s
+      }
+    } else {
+      el.textContent = currentText.slice(0, charIndex--);
+      if (charIndex < 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        charIndex = 0;
+      }
+    }
+
+    setTimeout(loop, isDeleting ? 40 : 60);
   }
+
+  loop();
+});
 </script>
 
   

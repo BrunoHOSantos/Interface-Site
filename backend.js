@@ -10,7 +10,7 @@ document.getElementById("ThePretender").addEventListener("click", () => {
 })
 
 document.getElementById("BestOfYou").addEventListener("click", () => {
-    window.location.href = "../Index.html"
+    window.location.href = "../Paginas/BestOfYou.html"
 })
 
 document.getElementById("Everlong").addEventListener("click", () => {
