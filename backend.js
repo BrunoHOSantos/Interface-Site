@@ -45,3 +45,5 @@ document.getElementById("sendComment").addEventListener("click", function() {
     document.getElementById("commentInput").value = "";
 });
 
+
+

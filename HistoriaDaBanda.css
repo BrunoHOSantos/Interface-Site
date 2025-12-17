@@ -1,0 +1,42 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+html.dark {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.60s ease;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#PrimeiraFrase{
+    font-size: clamp(2.8rem, 4vw, 4rem);;
+    font-family: "SpaceGrotesk";
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+#SegundaFrase{
+    font-size: 15pt;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
+}
+
+.accordion-item{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 90%;
+}
+
+#toggleTheme{
+    margin-left: 1vw;
+}

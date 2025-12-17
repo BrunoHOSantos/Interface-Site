@@ -34,7 +34,7 @@
             Lista
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="Paginas\P1.html">P1</a></li>
+            <li><a class="dropdown-item" href="Paginas\P1.html">Sobre a Banda</a></li>
             <li><a class="dropdown-item" href="Paginas\P2.html">P2</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Outra Coisa</a></li>
@@ -66,15 +66,94 @@
 </div>
 
 
-
 <!-- ---------------------------------------- -->
 <h1 class="typewriter">Bem-vindo.</h1>
 <p id="type-loop"></p>
 <!-- ---------------------------------------------- -->
 
+<div class="cards-container">
+  <div id="card1" class="card" style="width: 18rem;">
+    <img src="https://i.scdn.co/image/ab67616d0000b27350d3fff0dc3d9b55f164d8d6" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Best Of You</h5>
+      <p class="card-text">“Best of You” é uma música sobre libertação emocional, 
+        luta interna e recusa em ser controlado por pessoas ou situações que te machucam. Ela fala sobre...</p>
+      <a href="/Paginas/BestOfYou.html" class="btn btn-primary">Play</a>
+    </div>
+  </div>
+
+  <div id="card1" class="card" style="width: 18rem;">
+    <img src="https://i.scdn.co/image/ab67616d0000b273bfff163b0602156a983fa079" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Times Like These</h5>
+      <p class="card-text">“Times Like These” é uma música sobre reconstrução,
+         aprendizado através da dor e a força que nasce em momentos difíceis. Ela fala sobre...</p>
+      <a href="/Paginas/TimesLikeThese.html" class="btn btn-primary">Play</a>
+    </div>
+  </div>
+
+  <div id="card1" class="card" style="width: 18rem;">
+    <img src="https://i.scdn.co/image/ab67616d0000b2739d957247c6c610cb7c4da1c5" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">The Pretender</h5>
+      <p class="card-text">“The Pretender” é uma música sobre confronto,
+         autenticidade e a recusa em viver de acordo com expectativas impostas por outras pessoas ou pela sociedade.
+        Ela fala sobre...</p>
+      <a href="/Paginas/ThePretender.html" class="btn btn-primary">Play</a>
+    </div>
+  </div>
+
+  <div id="card1" class="card" style="width: 18rem;">
+    <img src="https://i.scdn.co/image/ab67616d0000b27393376fd36a4e55a40ef0c30f" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Learn To Fly</h5>
+      <p class="card-text">“Learn To Fly” é uma música sobre mudança,
+         crescimento pessoal e a vontade de sair do lugar onde se está para algo melhor.
+          Ela fala sobre...</p>
+      <a href="/Paginas/LearnToFly.html" class="btn btn-primary">Play</a>
+    </div>
+  </div>
+
+  <div id="card1" class="card" style="width: 18rem;">
+    <img src="https://i.scdn.co/image/ab67616d0000b2739989f92e8d6c39c2619d35ee" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">My Hero</h5>
+      <p class="card-text">“My Hero” é uma música sobre admiração silenciosa,
+         força interior e pessoas comuns que se tornam heroínas sem buscar reconhecimento.
+          Ela fala sobre...</p>
+      <a href="/Paginas/MyHero.html" class="btn btn-primary">Play</a>
+    </div>
+  </div>
+</div>
+
+<div class="fade-scroll fade-lento">
+  <p id="FundoCor"></p>
+</div>
+
+  <div class="fade-scroll">
+      <p id="Fundo">Olá, meu nome é Bruno Henrique Oliveira dos Santos.
+      Sou estudante da área de Ciência da Computação e decidi me aprofundar no desenvolvimento Front-End,
+      área que sempre despertou meu interesse pela combinação entre lógica, design e experiência do usuário.
+        A criação desses projetos sempre me motivou a buscar organização, atenção aos detalhes e constante aprimoramento técnico.
+      </br>
+      </br>
+      Percebendo a necessidade de demonstrar, de forma prática, o que venho aprendendo,
+      desenvolvi este site como parte do meu processo de evolução profissional. Ele reflete meus estudos recentes em Full Stack,
+        aliados aos meus anos de experiência em informática. Embora possam existir pequenos ajustes a serem feitos, este é meu primeiro projeto autoral,
+        desenvolvido com dedicação, cuidado e compromisso com a qualidade. Agradeço pela visita e pelo tempo dedicado à visualização do meu trabalho.
+      </p>
+    </div>
+
+
+<div class="fade-scroll">
+    <p id="FundoCor2">
+    <img id="Foto" src="20221008_103834_404BC621-05C0-45CD-B2BF-7B65F2917713.JPG" alt="">
+    </p>
+</div>
 
   <!-- frontend -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="card.css">
 
   <!-- backend -->
   <script src="backend.js"></script>
@@ -163,6 +242,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+<script>
+  const elementos = document.querySelectorAll('.fade-scroll');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('aparecer');
+        observer.unobserve(entry.target); // anima só uma vez
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  elementos.forEach(el => observer.observe(el));
+</script>
   
 
 </body>

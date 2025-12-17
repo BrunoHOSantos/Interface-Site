@@ -8,12 +8,19 @@ html.dark {
     --text-color: #ffffff;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: 0.60s ease;
     max-width: 100%;
     overflow-x: hidden;
+    max-height: 10px;
+    overflow-y: auto;
 }
 
 
@@ -50,7 +57,7 @@ body {
     top: 0;
     left: 0;              
     width: 90px;         
-    height: 300vh;        
+    height: 770vh;        
     margin-right: 22vw;
     background-color: #212529; 
     padding: 20px;
@@ -66,14 +73,27 @@ body {
     top: 0;
     left: 0;              
     width: 90px;         
-    height: 310vh;        
+    height: 540vh;        
     margin-right: 22vw;
     background-color: #212529; 
     padding: 20px;
     overflow-y: auto;     
     }
 
-
+@media(max-width: 1666px) {
+    .sidebar-esquerda {
+    position: absolute;
+    z-index: 1; 
+    top: 0;
+    left: 0;              
+    width: 90px;         
+    height: 540vh;        
+    margin-right: 22vw;
+    background-color: #212529; 
+    padding: 20px;
+    overflow-y: auto;     
+    }
+}
 
 }
 
@@ -469,4 +489,101 @@ body {
   to {
     visibility: hidden;
   }
+}
+
+#Fundo{
+    position: absolute;
+    text-align: left;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    margin-right: 60vw;
+    
+}
+
+#FundoCor{
+    position: absolute;
+    background-color: #2b303544;
+    z-index: -10;
+    margin-top: 190px;
+    width: 760px;
+    height: 380px;
+    box-shadow: 5px 10px 15px 2px gray;
+}
+
+@media (max-width: 768px) {
+    #Fundo{   
+    position: absolute;
+    text-align: left;
+    margin-left: 20vw;
+    margin-right: 8vw;
+    margin-top: 20vh;
+ }
+
+ #FundoCor{
+    position: absolute;
+    background-color: #2b303544;
+    z-index: -10;
+    margin-top: 190px;
+    width: 60vh;
+    height: 420px;
+ }
+  
+}
+
+#Foto{
+    display: flex;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px gray;
+}
+
+#FundoCor2{
+    display: flex;
+    margin-left: auto;
+    background-color: #2b303544;
+    margin-top: 190px;
+    width: 520px;
+    height: 440px;
+    
+    box-shadow: 0px 5px 15px 5px gray;
+}
+@media (max-width: 768px) {
+    #Foto{
+    display: flex;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px gray;
+}
+
+#FundoCor2{
+    display: flex;
+    margin-left: auto;
+    background-color: #2b303544;
+    margin-top: 650px;
+    width: 520px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px gray;
+}
+ }
+
+.fade-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 2.0s ease;
+}
+
+.fade-scroll.aparecer {
+  opacity: 1;
+  transform: translateX(-40px);
+}
+
+.fade-lento {
+transition: opacity 1.5s ease, transform 4s ease;
 }

@@ -25,12 +25,13 @@
             Lista
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">P1</a></li>
+            <li><a class="dropdown-item" href="#">Sobre a Banda</a></li>
             <li><a class="dropdown-item" href="P2.html">P2</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Outra Coisa</a></li>
           </ul>
         </li>
+        <button id="toggleTheme" type="button" class="btn btn-dark">☼︎</button>
       </ul>
       <form class="d-flex" role="search" action="https://www.google.com/search" method="GET">
         <input class="form-control me-2" type="search" placeholder="Digite..." aria-label="Search" name="q"/>
@@ -42,40 +43,88 @@
 </nav>
 
 <!-- ------------------------------------------------------------------------------------------------------------- -->
-    <h1>Conteudo Teste!!!</h1>
+
+    <h1 id="PrimeiraFrase">Desde o Inicio!!</h1>
+    <p id="SegundaFrase">Os Foo Fighters nasceram em 1994, quando Dave Grohl, recém-saído do fim do Nirvana, decidiu transformar silêncio em barulho outra vez. 
+      Sozinho, ele gravou quase todos os instrumentos de um álbum cru e honesto, mais como catarse do que como plano de carreira. O nome curioso veio de relatos da 
+      Segunda Guerra sobre objetos voadores misteriosos, uma pista do espírito inquieto da banda.
+      O projeto pessoal cresceu rápido e virou banda, ganhando palcos, público e uma identidade própria: 
+      guitarras fortes, refrões que grudam e letras que falam de dor, superação e energia vital. 
+      Com o tempo, os Foo Fighters se tornaram um dos maiores nomes do rock moderno, conhecidos 
+      tanto pelos shows intensos quanto pela resistência em manter o rock vivo em um mundo em constante mudança.</p>
     <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Parte 1
+        Premios
       </button>
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Para usar "Grid", basta usar <code>display:flex</code> e entao ira ativar o flex-box</div>
+      <div class="accordion-body"> * Grammy Awards: mais de 15 Grammys, incluindo categorias como Best Rock Album, Best Rock Song e Best Rock Performance.</br>
+        </br>
+        * MTV Video Music Awards (VMA): vitórias por clipes marcantes, como Best Rock Video e Best Direction.</br>
+        </br>
+        * Brit Awards: reconhecimento internacional como Best International Group.</br>
+        </br>
+        * Rock and Roll Hall of Fame: induzidos em 2021, um selo definitivo de impacto na história do rock.</br>
+        </br>
+        * NME Awards: prêmios ligados à crítica e ao público alternativo.</div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Parte 2
+        Albuns
       </button>
     </h2>
     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+      <div class="accordion-body">1. Foo Fighters (1995)</br>
+
+       2. The Colour and the Shape (1997)</br>
+
+       3. There Is Nothing Left to Lose (1999)</br>
+
+       4. One by One (2002)</br>
+
+       5. In Your Honor (2005)</br>
+
+       6. Echoes, Silence, Patience & Grace (2007)</br>
+
+       7. Wasting Light (2011)</br>
+
+       8. Sonic Highways (2014)</br>
+
+       9. Concrete and Gold (2017)</br>
+
+       10. Medicine at Midnight (2021)</br>
+
+       11. But Here We Are (2023</div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Parte 3
+        Integrantes
       </button>
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      <div class="accordion-body">Dave Grohl - vocal principal, guitarra rítmica e líder da banda</br>
+
+        Nate Mendel - baixo</br>
+
+        Pat Smear - guitarra rítmica</br>
+
+        Chris Shiflett - guitarra solo</br>
+
+        Rami Jaffee - teclados e piano</div>
     </div>
   </div>
 </div>
 </body>
 </html>
 
-<script src="theme.js"></script>
+
+<!-- ------------FrontEnd--------------- -->
+<link rel="stylesheet" href="/HistoriaDaBanda.css">
+<!-- -----------------BackEnd------------------- -->
+<script src="/backend.js"></script>
