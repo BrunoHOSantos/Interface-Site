@@ -1,0 +1,23 @@
+#PrimeiraFrase2{
+    text-align: center;
+}
+
+#carouselExample{
+    margin-top: 100px;
+    margin-left: 34vw;
+    width: 600px;
+    height: 600px;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: transform .3s ease, color .3s ease;
+}
+
+.social-link:hover {
+  color: #000000;
+  transform: translateY(-3px);
+}
+
+
