@@ -33,6 +33,10 @@ document.getElementById("Bruno").addEventListener("click", () => {
     window.location.href = "https://www.linkedin.com/in/bruno-henrique-oliveira-dos-santos-112187131/"
 })
 
+document.getElementById("DaveGrohlCard").addEventListener("click", () => {
+    window.location.href = "https://www.instagram.com/davestruestories/"
+})
+
 document.getElementById("sendComment").addEventListener("click", function() {
     const text = document.getElementById("commentInput").value.trim();
 
