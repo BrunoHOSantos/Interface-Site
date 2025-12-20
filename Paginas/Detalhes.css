@@ -1,0 +1,73 @@
+#PrimeiraFrase3{
+    margin-top: 60px;
+    margin-left: 70px;
+    text-align: center;
+    font-family: "SpaceGrotesk";
+    font-size: 40pt;
+}
+
+.Imagens1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 56px;
+    padding: 16px;
+    margin-top: 190px;
+    margin-left: 70px;
+    
+    
+}
+
+#i1{
+    width: 200px;
+    height: 210px;
+}
+#i2{
+    width: 155px;
+    height: 210px;
+}
+#i3{
+    width: 200px;
+    height: 215px;
+}
+#i4{
+    margin-top: 50px;
+    width: 200px;
+    height: 155px;
+}
+
+
+#Explicacao1{
+    font-size: 15pt;
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 115px;
+}
+@media (max-width: 768px) {
+    #PrimeiraFrase3{
+    margin-top: 60px;
+    text-align: center;
+    font-family: "SpaceGrotesk";
+    font-size: 40pt;
+    margin-left: 80px;
+ }
+
+.Imagens1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+    margin-top: 90px;
+    margin-left: 90px;
+ }
+
+#Explicacao1{
+    font-size: 13pt;
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 90px;
+    white-space: normal;
+ }
+
+}

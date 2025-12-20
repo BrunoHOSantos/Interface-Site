@@ -492,6 +492,7 @@ body {
 }
 
 #Fundo{
+    color: white;
     position: absolute;
     text-align: left;
     margin-top: 20vh;
@@ -502,7 +503,7 @@ body {
 
 #FundoCor{
     position: absolute;
-    background-color: #2b303544;
+    background-color: #2B3035;
     z-index: -10;
     margin-top: 190px;
     width: 760px;
@@ -514,14 +515,14 @@ body {
     #Fundo{   
     position: absolute;
     text-align: left;
-    margin-left: 20vw;
+    margin-left: 22vw;
     margin-right: 8vw;
     margin-top: 20vh;
  }
 
  #FundoCor{
     position: absolute;
-    background-color: #2b303544;
+    background-color: #2B3035;
     z-index: -10;
     margin-top: 190px;
     width: 60vh;
@@ -543,9 +544,9 @@ body {
 #FundoCor2{
     display: flex;
     margin-left: auto;
-    background-color: #2b303544;
+    background-color: #2B3035;
     margin-top: 190px;
-    width: 520px;
+    width: 420px;
     height: 440px;
     
     box-shadow: 0px 5px 15px 5px gray;
@@ -564,7 +565,7 @@ body {
 #FundoCor2{
     display: flex;
     margin-left: auto;
-    background-color: #2b303544;
+    background-color: #2B3035;
     margin-top: 650px;
     width: 520px;
     height: 450px;
@@ -586,4 +587,13 @@ body {
 
 .fade-lento {
 transition: opacity 1.5s ease, transform 4s ease;
+}
+
+.pagina-estatica, 
+.pagina-estatica html{
+ margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
 }

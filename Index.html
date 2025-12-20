@@ -37,7 +37,7 @@
             <li><a class="dropdown-item" href="Paginas\P1.html">Sobre a Banda</a></li>
             <li><a class="dropdown-item" href="Paginas\P2.html">Redes Sociais</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Outra Coisa</a></li>
+            <li><a class="dropdown-item" href="Paginas\Detalhes.html">Detalhes</a></li>
           </ul>
         </li>
       </ul>
@@ -151,17 +151,11 @@
     </p>
 </div>
 
-  <!-- frontend -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="card.css">
 
-  <!-- backend -->
-  <script src="backend.js"></script>
-
-  <script>
+<script>
   window.addEventListener('scroll', () => {
     const botao = document.getElementById('toggleTheme');
-
+    
     if (window.scrollY > 50) {
       botao.classList.add('movido');
       botao.classList.remove('inicio');
@@ -170,25 +164,25 @@
       botao.classList.remove('movido');
     }
   });
-</script>
+  </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".typewriter");
   let delayBetweenElements = 600;
-
+  
   elements.forEach((el, index) => {
     const text = el.textContent;
     el.textContent = "";
-
+    
     const cursor = document.createElement("span");
     cursor.classList.add("cursor");
     cursor.textContent = "|";
     el.appendChild(cursor);
-
+    
     let i = 0;
     const speed = Math.random() * 40 + 40;
-
+    
     setTimeout(() => {
       const typing = setInterval(() => {
         if (i < text.length) {
@@ -205,22 +199,22 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const el = document.getElementById("type-loop");
-
-  const texts = [
-    "Um experimento da minha parte, para mostrar o que aprendi em: Bootstrap, CSS, HTML, JS...",
-    "Isso e um site mostrando algumas musicas de uma excelente banda, para excelentes pessoas.",
-    `"Best Of You" E a melhor musica deles :)`
-  ];
-
-  let textIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-
-  function loop() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const el = document.getElementById("type-loop");
+    
+    const texts = [
+      "Um experimento da minha parte, para mostrar o que aprendi em: Bootstrap, CSS, HTML, JS...",
+      "Isso e um site mostrando algumas musicas de uma excelente banda, para excelentes pessoas.",
+      `"Best Of You" E a melhor musica deles :)`
+    ];
+    
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    
+    function loop() {
     const currentText = texts[textIndex];
-
+    
     if (!isDeleting) {
       el.textContent = currentText.slice(0, charIndex++);
       if (charIndex > currentText.length) {
@@ -234,17 +228,17 @@ document.addEventListener("DOMContentLoaded", () => {
         charIndex = 0;
       }
     }
-
+    
     setTimeout(loop, isDeleting ? 40 : 60);
   }
-
+  
   loop();
 });
 </script>
 
 <script>
   const elementos = document.querySelectorAll('.fade-scroll');
-
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -255,10 +249,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }, {
     threshold: 0.2
   });
-
-  elementos.forEach(el => observer.observe(el));
-</script>
   
+  elementos.forEach(el => observer.observe(el));
+  </script>
+  
+  <!-- frontend -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="card.css">
+  
+  <!-- backend -->
+  <script src="backend.js"></script>
 
 </body>
 </html>
