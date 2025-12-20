@@ -5,35 +5,35 @@ document.getElementById("toggleTheme").addEventListener('click', function() {
     document.documentElement.classList.toggle('dark')
 });
 
-document.getElementById("ThePretender").addEventListener("click", () => {
+document.getElementById("thePretender").addEventListener("click", () => {
     window.location.href = "../Paginas/ThePretender.html"
 })
 
-document.getElementById("BestOfYou").addEventListener("click", () => {
+document.getElementById("bestOfYou").addEventListener("click", () => {
     window.location.href = "../Paginas/BestOfYou.html"
 })
 
-document.getElementById("Everlong").addEventListener("click", () => {
+document.getElementById("everlong").addEventListener("click", () => {
     window.location.href = "../Paginas/Everlong.html"
 })
 
-document.getElementById("LearnToFly").addEventListener("click", () => {
+document.getElementById("learnToFly").addEventListener("click", () => {
     window.location.href = "../Paginas/LearnToFly.html"
 })
 
-document.getElementById("MyHero").addEventListener("click", () => {
+document.getElementById("myHero").addEventListener("click", () => {
     window.location.href = "../Paginas/MyHero.html"
 })
 
-document.getElementById("TimesLikeThese").addEventListener("click", () => {
+document.getElementById("timesLikeThese").addEventListener("click", () => {
     window.location.href = "../Paginas/TimesLikeThese.html"
 })
 
-document.getElementById("Bruno").addEventListener("click", () => {
+document.getElementById("bruno").addEventListener("click", () => {
     window.location.href = "https://www.linkedin.com/in/bruno-henrique-oliveira-dos-santos-112187131/"
 })
 
-document.getElementById("DaveGrohlCard").addEventListener("click", () => {
+document.getElementById("daveGrohlCard").addEventListener("click", () => {
     window.location.href = "https://www.instagram.com/davestruestories/"
 })
 
